@@ -1,0 +1,19 @@
+### Health
+GET http://127.0.0.1:8000/health
+
+### Create entry
+POST http://127.0.0.1:8000/entries
+Content-Type: application/json
+
+{
+  "habit": "lectura",
+  "mood": "good",
+  "minutes": 30,
+  "note": "Capítulo 3 — Clean Code"
+}
+
+### List
+GET http://127.0.0.1:8000/entries?limit=20
+
+### Stats
+GET http://127.0.0.1:8000/stats
